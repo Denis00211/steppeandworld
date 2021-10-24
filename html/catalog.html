@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimum-scale=1.0"/>
+    <title>STEPPE&WORLD</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+    <link rel="stylesheet" href="../vendor/slick/slick.css"/>
+    <link rel="stylesheet" href="../vendor/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="../css/style.css?v=1"/>
+    <!--link(rel="stylesheet", href="../vendor/font-awesome-4.7.0/css/font-awesome.min.css")-->
+    <!--link(rel="stylesheet", href="../vendor/jssocial/jssocials.css")-->
+    <!--link(rel="stylesheet", href="../vendor/jssocial/jssocials-theme-flat.css")-->
+    <!--link(rel="stylesheet", href="../vendor/simplebar/simplebar.css")-->
+  </head>
+  <body class="page__inner">
+    <div class="page-header-wrap">
+      <div class="page-header">
+        <div class="container page-header__container">
+          <div class="page-header__wrap">
+            <div class="row page-header__row">
+              <div class="page-header__col"><a class="page-header__logo-wrap" href="index.html"><img class="page-header__logo" src="../img/logo.svg"/></a></div>
+              <div class="page-header__col">
+                <form class="form-search page-header__form-search" action="">
+                  <div class="form-search__group">
+                    <button class="form-search__button" type="submit"></button>
+                    <input class="form-search__input" type="search" placeholder="Поиск по названиям, авторам"/>
+                  </div>
+                </form>
+              </div>
+              <div class="page-header__col">
+                <div class="page-header__nav">
+                  <div class="page-header__nav-item-wrap"><a class="page-header__nav-item" href="#">Новинки</a></div>
+                  <div class="page-header__nav-item-wrap"><a class="page-header__nav-item" href="#">Бестселлеры</a></div>
+                  <div class="page-header__nav-item-wrap"><a class="page-header__nav-item" href="#">Классика</a></div>
+                  <div class="page-header__nav-item-wrap"><a class="page-header__nav-item" href="#">Распродажа</a></div>
+                </div>
+              </div>
+              <div class="page-header__col">
+                <div class="page-header__user"><a class="page-header__favorites" href="#"></a><a class="page-header__basket" href="#"></a><a class="btn btn--blue page-header__login" href="#">Войти</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="page-header__wrap-next">
+            <div class="row page-header__row page-header__info">
+              <div class="page-header__col">
+                <div class="page-header__info-wrap">
+                  <div class="page-header__bonus">Бонус</div><a class="page-header__loyalty" href="#">Программа лояльности Plus</a>
+                </div>
+              </div>
+              <div class="page-header__col">
+                <div class="page-header__info-wrap-next"><a class="page-header__info-link" href="#">О доставке</a><a class="page-header__info-link" href="#">Бесплатные книги</a>
+                  <div class="page-header__langs">
+                    <div class="page-header__lang-header">Ру</div>
+                    <div class="page-header__lang-dropdown"><a class="page-header__lang-item page-header__lang-item--active" href="#">Русский</a><a class="page-header__lang-item" href="#">Казахский</a><a class="page-header__lang-item" href="#">Английский</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="page-content" role="main">
+      <section class="inner-page catalog inner-page--catalog">
+        <div class="container">
+          <h2 class="page-title">Каталог книг</h2>
+          <div class="catalog__row">
+            <div class="catalog__col">
+              <form class="catalog__filter" action="" method="">
+                <div class="catalog__sort-block">
+                  <div class="catalog__sort">
+                    <div class="catalog__sort-header">По популярности</div>
+                    <div class="catalog__sort-dropdown"><a class="catalog__sort-item catalog__sort-item--active" href="#">По популярности</a><a class="catalog__sort-item" href="#">По названию: от А до Я</a><a class="catalog__sort-item" href="#">По возрастанию цены</a><a class="catalog__sort-item" href="#">По убыванию цены</a></div>
+                  </div>
+                  <div class="catalog__format"><a class="catalog__format-card catalog__format-card--active" href="#"></a><a class="catalog__format-long" href="#"></a></div>
+                </div>
+                <div class="catalog__filter-items">
+                  <div class="catalog__filter-item">
+                    <div class="catalog__filter-title catalog__filter-title--dropdown">Категория</div>
+                    <div class="catalog__filter-group catalog__filter-group--dropdown">
+                      <div class="catalog__filter-group-item">
+                        <input class="catalog__filter-group-input" id="1" type="checkbox"/>
+                        <label class="catalog__filter-group-label" for="1">Фэнтези</label><span class="catalog__filter-group-count">15</span>
+                      </div>
+                      <div class="catalog__filter-group-item">
+                        <input class="catalog__filter-group-input" id="2" type="checkbox"/>
+                        <label class="catalog__filter-group-label" for="2">Комикс и манга</label><span class="catalog__filter-group-count">7</span>
+                      </div>
+                      <div class="catalog__filter-group-item">
+                        <input class="catalog__filter-group-input" id="3" type="checkbox"/>
+                        <label class="catalog__filter-group-label" for="3">Современная литература</label><span class="catalog__filter-group-count">4</span>
+                      </div>
+                      <div class="catalog__filter-group-item">
+                        <input class="catalog__filter-group-input" id="4" type="checkbox"/>
+                        <label class="catalog__filter-group-label" for="4">Образование</label><span class="catalog__filter-group-count">3</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__filter-item">
+                    <div class="catalog__filter-title">Статус</div>
+                    <div class="catalog__filter-group">
+                      <div class="catalog__filter-group-item">
+                        <input class="catalog__filter-group-input" id="5" type="checkbox"/>
+                        <label class="catalog__filter-group-label" for="5">Новинки</label><span class="catalog__filter-group-count">15</span>
+                      </div>
+                      <div class="catalog__filter-group-item">
+                        <input class="catalog__filter-group-input" id="6" type="checkbox"/>
+                        <label class="catalog__filter-group-label" for="6">Хиты продаж</label><span class="catalog__filter-group-count">7</span>
+                      </div>
+                      <div class="catalog__filter-group-item">
+                        <input class="catalog__filter-group-input" id="7" type="checkbox"/>
+                        <label class="catalog__filter-group-label" for="7">Распродажа</label><span class="catalog__filter-group-count">4</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__filter-item">
+                    <div class="catalog__filter-title">Цена</div>
+                    <div class="catalog__filter-group">
+                      <div class="catalog__filter-cost">
+                        <div class="catalog__filter-slider">
+                          <input class="irs-hidden-input" id="catalog__filter-slider-cost" type="text" name="" value="" tabindex="-1" readonly="" data-min="1000" data-max="30000" data-min-start="1000" data-max-start="30000"/>
+                        </div>
+                        <div class="catalog__filter-cost-min">
+                          <input class="catalog__filter-group-range" id="catalog__filter-cost-min" type="number" data-min="1000" value="1000"/>
+                        </div>
+                        <div class="catalog__filter-cost-max">
+                          <input class="catalog__filter-group-range" id="catalog__filter-cost-max" type="number" data-max="30000" value="30000"/>
+                        </div>
+                        <div class="catalog__filter-cost-currency">₸</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__filter-item">
+                    <div class="catalog__filter-title">Возраст</div>
+                    <div class="catalog__filter-group">
+                      <div class="catalog__filter-group-item">
+                        <input class="catalog__filter-group-input" id="8" type="checkbox"/>
+                        <label class="catalog__filter-group-label" for="8">Все</label>
+                      </div>
+                      <div class="catalog__filter-group-item">
+                        <input class="catalog__filter-group-input" id="9" type="checkbox"/>
+                        <label class="catalog__filter-group-label" for="9">6+</label>
+                      </div>
+                      <div class="catalog__filter-group-item">
+                        <input class="catalog__filter-group-input" id="10" type="checkbox"/>
+                        <label class="catalog__filter-group-label" for="10">12+</label>
+                      </div>
+                      <div class="catalog__filter-group-item">
+                        <input class="catalog__filter-group-input" id="11" type="checkbox"/>
+                        <label class="catalog__filter-group-label" for="11">16+</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="catalog__col">
+              <div class="catalog__items catalog__items--card">
+                <div class="catalog__items-row">
+                  <div class="catalog__items-col">
+                    <div class="catalog__item">
+                      <div class="catalog__new">Нью!</div><a class="catalog__image" href="#" style="background-image: url('../img/content/book-main.png')"></a>
+                      <div class="catalog__text"><a class="catalog__link" href="catalog-inner.html"></a><a class="catalog__title" href="#">7 навыков высокоэффективных людей</a>
+                        <div class="catalog__author">Стивен Кови</div>
+                        <div class="catalog__desc">Во второе издание вошло эссе-постскриптум «О секретах устойчивости» и афоризмы автора. За одно только последнее десятилетие человечество пережило ряд тяжелейших потрясений: 11 сентября 2001 года, война в Осетии, мировой финансовый кризис. Все эти события, представляющиеся нам сейчас закономерными, казались...</div>
+                        <div class="catalog__info">
+                          <div class="catalog__cost">2340 ₸</div><a class="catalog__basket" href="#"></a><a class="catalog__favorites" href="#"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__items-col">
+                    <div class="catalog__item">
+                      <div class="catalog__hits">Хит</div><a class="catalog__image" href="#" style="background-image: url('../img/content/book-main.png')"></a>
+                      <div class="catalog__text"><a class="catalog__link" href="catalog-inner.html"></a><a class="catalog__title" href="#">7 навыков высокоэффективных людей</a>
+                        <div class="catalog__author">Стивен Кови</div>
+                        <div class="catalog__desc">Во второе издание вошло эссе-постскриптум «О секретах устойчивости» и афоризмы автора. За одно только последнее десятилетие человечество пережило ряд тяжелейших потрясений: 11 сентября 2001 года, война в Осетии, мировой финансовый кризис. Все эти события, представляющиеся нам сейчас закономерными, казались...</div>
+                        <div class="catalog__info">
+                          <div class="catalog__cost">2340 ₸</div><a class="catalog__basket" href="#"></a><a class="catalog__favorites" href="#"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__items-col">
+                    <div class="catalog__item">
+                      <div class="catalog__discount">45%</div><a class="catalog__image" href="#" style="background-image: url('../img/content/book-main.png')"></a>
+                      <div class="catalog__text"><a class="catalog__link" href="catalog-inner.html"></a><a class="catalog__title" href="#">7 навыков высокоэффективных людей</a>
+                        <div class="catalog__author">Стивен Кови</div>
+                        <div class="catalog__desc">Во второе издание вошло эссе-постскриптум «О секретах устойчивости» и афоризмы автора. За одно только последнее десятилетие человечество пережило ряд тяжелейших потрясений: 11 сентября 2001 года, война в Осетии, мировой финансовый кризис. Все эти события, представляющиеся нам сейчас закономерными, казались...</div>
+                        <div class="catalog__info">
+                          <div class="catalog__cost">2340 ₸</div>
+                          <div class="main-books__cost-before">10 200 ₸</div><a class="catalog__basket" href="#"></a><a class="catalog__favorites" href="#"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__items-row">
+                  <div class="catalog__items-col">
+                    <div class="catalog__item">
+                      <div class="catalog__new">Нью!</div><a class="catalog__image" href="#" style="background-image: url('../img/content/book-main.png')"></a>
+                      <div class="catalog__text"><a class="catalog__link" href="catalog-inner.html"></a><a class="catalog__title" href="#">7 навыков высокоэффективных людей</a>
+                        <div class="catalog__author">Стивен Кови</div>
+                        <div class="catalog__desc">Во второе издание вошло эссе-постскриптум «О секретах устойчивости» и афоризмы автора. За одно только последнее десятилетие человечество пережило ряд тяжелейших потрясений: 11 сентября 2001 года, война в Осетии, мировой финансовый кризис. Все эти события, представляющиеся нам сейчас закономерными, казались...</div>
+                        <div class="catalog__info">
+                          <div class="catalog__cost">2340 ₸</div><a class="catalog__basket" href="#"></a><a class="catalog__favorites" href="#"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__items-col">
+                    <div class="catalog__item">
+                      <div class="catalog__hits">Хит</div><a class="catalog__image" href="#" style="background-image: url('../img/content/book-main.png')"></a>
+                      <div class="catalog__text"><a class="catalog__link" href="catalog-inner.html"></a><a class="catalog__title" href="#">7 навыков высокоэффективных людей</a>
+                        <div class="catalog__author">Стивен Кови</div>
+                        <div class="catalog__desc">Во второе издание вошло эссе-постскриптум «О секретах устойчивости» и афоризмы автора. За одно только последнее десятилетие человечество пережило ряд тяжелейших потрясений: 11 сентября 2001 года, война в Осетии, мировой финансовый кризис. Все эти события, представляющиеся нам сейчас закономерными, казались...</div>
+                        <div class="catalog__info">
+                          <div class="catalog__cost">2340 ₸</div><a class="catalog__basket" href="#"></a><a class="catalog__favorites" href="#"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__items-col">
+                    <div class="catalog__item">
+                      <div class="catalog__discount">45%</div><a class="catalog__image" href="#" style="background-image: url('../img/content/book-main.png')"></a>
+                      <div class="catalog__text"><a class="catalog__link" href="catalog-inner.html"></a><a class="catalog__title" href="#">7 навыков высокоэффективных людей</a>
+                        <div class="catalog__author">Стивен Кови</div>
+                        <div class="catalog__desc">Во второе издание вошло эссе-постскриптум «О секретах устойчивости» и афоризмы автора. За одно только последнее десятилетие человечество пережило ряд тяжелейших потрясений: 11 сентября 2001 года, война в Осетии, мировой финансовый кризис. Все эти события, представляющиеся нам сейчас закономерными, казались...</div>
+                        <div class="catalog__info">
+                          <div class="catalog__cost">2340 ₸</div>
+                          <div class="main-books__cost-before">10 200 ₸</div><a class="catalog__basket" href="#"></a><a class="catalog__favorites" href="#"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="basket-pages">
+      <div class="basket-pages__inner">
+        <div class="basket-pages__header">
+          <div class="basket-pages__title">Одна книга</div><a class="basket-pages__close" href="#"></a>
+        </div>
+        <div class="basket-pages__body" data-item-currency="₸">
+          <div class="basket-pages__items">
+            <div class="basket-pages__item" data-item-sum="7200" data-item-total="7200" data-count="1">
+              <div class="basket-pages__image" style="background-image: url('../img/content/catalog-inner.png')"></div>
+              <div class="basket-pages__text">
+                <div class="basket-pages__item-title">Дочковедение для пап</div>
+                <div class="basket-pages__cost">7200 ₸</div>
+                <div class="basket-pages__count-wrap"><a class="basket-pages__count-minus" href="#"></a>
+                  <div class="basket-pages__count">1</div><a class="basket-pages__count-plus" href="#"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="basket-pages__footer">
+          <div class="basket-pages__total-sum">Итого: <span>7200 ₸ </span></div>
+          <div class="basket-pages__buttons">
+            <div class="basket-pages__promo-wrap">
+              <input class="basket-pages__promo" placeholder="Промокод" type="text"/>
+            </div>
+            <div class="basket-pages__button-wrap"><a class="btn btn--blue basket-pages__btn" href="#">Оформить</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-footer">
+      <div class="container">
+        <div class="row page-footer__row">
+          <div class="col-xs-12 col-sm-4 col-md-3 page-footer__col"><a class="page-footer__logo" href="#"></a>
+            <div class="page-footer__shares"><a class="page-footer__social-link page-footer__social-link--telegram" href="#"></a><a class="page-footer__social-link page-footer__social-link--instagram" href="#"></a><a class="page-footer__social-link page-footer__social-link--facebook" href="#"></a></div>
+            <div class="page-footer__langs">
+              <div class="page-footer__lang page-footer__lang-header">Русский</div>
+              <div class="page-footer__lang-dropdown"><a class="page-footer__lang-item page-footer__lang-item--active" href="#">Русский</a><a class="page-footer__lang-item" href="#">Английский</a><a class="page-footer__lang-item" href="#">Казахский</a></div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-3 page-footer__col">
+            <div class="page-footer__menu">
+              <h4 class="page-footer__menu-title">Издательство</h4>
+              <div class="page-footer__menu-items">
+                <div class="page-footer__menu-item-wrap"><a class="page-footer__menu-item" href="#">О нас</a></div>
+                <div class="page-footer__menu-item-wrap"><a class="page-footer__menu-item" href="#">Книги</a></div>
+                <div class="page-footer__menu-item-wrap"><a class="page-footer__menu-item" href="#">Новости</a></div>
+                <div class="page-footer__menu-item-wrap"><a class="page-footer__menu-item" href="#">Услуги</a></div>
+                <div class="page-footer__menu-item-wrap"><a class="page-footer__menu-item" href="#">Контакты</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-3 page-footer__col">
+            <div class="page-footer__menu">
+              <h4 class="page-footer__menu-title">Магазин</h4>
+              <div class="page-footer__menu-items">
+                <div class="page-footer__menu-item-wrap"><a class="page-footer__menu-item" href="#">Новинки</a></div>
+                <div class="page-footer__menu-item-wrap"><a class="page-footer__menu-item" href="#">Бестселеры</a></div>
+                <div class="page-footer__menu-item-wrap"><a class="page-footer__menu-item" href="#">Скоро в продаже</a></div>
+                <div class="page-footer__menu-item-wrap"><a class="page-footer__menu-item" href="#">Блог</a></div>
+                <div class="page-footer__menu-item-wrap"><a class="page-footer__menu-item" href="#">Корпоративным клиентам</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-3 page-footer__col">
+            <div class="page-footer__mailing">
+              <h4 class="page-footer__mailing-title">Подпишитесь на рассылку</h4>
+              <p class="page-footer__mailing-text">Ежемесячная рассылка главных новостей, мероприятий и анонсов. Без спама</p>
+              <form class="mailing-form page-footer__mailing-form" action="">
+                <div class="mailing-form__group">
+                  <input class="mailing-form__input" type="email" name="email" placeholder="Почта"/>
+                  <button class="btn btn--blue mailing-form__btn" type="submit">Подписаться</button>
+                </div>
+                <div class="mailing-form__group">
+                  <input class="mailing-form__checkbox" type="checkbox" name="check" id="mailing-form_check"/>
+                  <label class="mailing-form__checkbox-label" for="mailing-form_check">Я даю согласие на обработку персональных данных</label>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="row page-footer__row">
+          <div class="col-xs-12 col-sm-6 col-md-6 page-footer__col">
+            <div class="page-footer__copyright">© 2021 Steppeandworld. Все права защищены</div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 page-footer__col">
+            <div class="page-footer__done">Сделано в theTypes</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script async="async" defer="defer" src="../js/all.min.js"></script>
+  </body>
+</html>
